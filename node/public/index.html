@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chart.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+            <h1>Edison on Modulus</h1>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="text-center jumbotron" style="background-color: rgba(151,187,205,0.4)">
+            <h1><span id="tempC">--</span> &#x2103;</h1>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="text-center jumbotron">
+            <h1><span id="tempF">--</span> &#x2109;</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <canvas id="chartC"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="pull-right">
+            <div id="lastUpdate"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
